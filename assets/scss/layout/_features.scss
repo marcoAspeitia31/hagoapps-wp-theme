@@ -1,0 +1,84 @@
+/****************************************************** */
+/**************** 09. Features Section **************** */
+/****************************************************** */
+
+.feature-item {
+  display: flex;
+  margin-bottom: 10px;
+
+  > i {
+    height: 60px;
+    width: 60px;
+    flex: none;
+    font-size: 35px;
+    transition: 0.5s;
+    line-height: 66px;
+    text-align: center;
+    margin-right: 25px;
+    border-radius: 7px;
+    background: #e7e4fb;
+    color: $primary-color;
+  }
+
+  &:hover > i {
+    color: white;
+    background: $primary-color;
+  }
+}
+
+/* Feature Right Images */
+
+.feature-images {
+  z-index: 1;
+  max-width: 600px;
+  margin-left: auto;
+  position: relative;
+
+  img {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 0 60px rgba(81, 56, 238, 0.1);
+  }
+
+  .first {
+    width: 48%;
+  }
+
+  .second {
+    margin-left: -7%;
+    margin-top: -8%;
+    width: 55%;
+  }
+
+  .third {
+    margin-left: 22%;
+    margin-top: -14%;
+    width: 36%;
+  }
+
+  .fourth {
+    position: relative;
+    margin-left: -3%;
+    margin-top: -30%;
+    width: 43%;
+  }
+
+  .circle-line {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: none;
+    right: -8%;
+    width: 28%;
+    top: 33%;
+  }
+}
+
+.features-section {
+  .circle-shape {
+    bottom: 10%;
+  }
+
+  .close-shape {
+    left: 90%;
+  }
+}

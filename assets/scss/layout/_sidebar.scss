@@ -23,7 +23,7 @@
     left: 0;
     bottom: 0;
     border-radius: 5px;
-    background: var(--primary-color);
+    background: $primary-color;
   }
 }
 
@@ -50,7 +50,7 @@
       line-height: 1;
       font-size: 18px;
       background: transparent;
-      color: var(--primary-color);
+      color: $primary-color;
     }
 
     input {
@@ -80,7 +80,7 @@
   }
 
   a:not(:hover) {
-    color: var(--heading-color);
+    color: $heading-color;
   }
 
   span {
@@ -126,11 +126,11 @@
     border-radius: 5px;
     background: #edebfd;
     margin: 0 10px 10px 0;
-    color: var(--heading-color);
+    color: $heading-color;
 
     &:hover {
       color: white;
-      background: var(--primary-color);
+      background: $primary-color;
     }
   }
 }
@@ -139,7 +139,7 @@
 
 .service-list {
   padding: 30px 35px;
-  border: 1px solid var(--border-color);
+  border: 1px solid $border-color;
 
   li {
     a {
@@ -149,20 +149,20 @@
       padding: 11px 25px;
       border-radius: 5px;
       align-items: center;
-      color: var(--heading-color);
+      color: $heading-color;
       justify-content: space-between;
-      background: var(--light-color);
-      font-family: var(--heading-font);
+      background: $light-color;
+      font-family: $heading-font;
 
       &:hover {
         color: white;
-        background: var(--primary-color);
+        background: $primary-color;
       }
     }
 
     &.active a {
       color: white;
-      background: var(--primary-color);
+      background: $primary-color;
     }
 
     &:not(:last-child) {
@@ -181,7 +181,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   background-image: url(../images/widgets/call-to-action-bg.png);
 
   h3 {
@@ -195,7 +195,7 @@
     font-weight: 600;
     margin-bottom: 22px;
     display: inline-block;
-    font-family: var(--heading-color);
+    font-family: $heading-color;
   }
 
   .number {
@@ -203,14 +203,14 @@
     font-size: 17px;
     font-weight: 600;
     text-decoration: underline;
-    font-family: var(--heading-font);
+    font-family: $heading-font;
   }
 
   .theme-btn {
     background: white;
     padding: 6px 25px;
     margin-bottom: 25px;
-    color: var(--heading-color);
+    color: $heading-color;
   }
 
   .action-man {
@@ -235,7 +235,7 @@
 
 .file-download {
   padding: 30px 35px;
-  border: 1px solid var(--border-color);
+  border: 1px solid $border-color;
 
   li {
     &:not(:last-child) {
@@ -246,7 +246,7 @@
       display: flex;
       border-radius: 5px;
       align-items: center;
-      background: var(--light-color);
+      background: $light-color;
 
       i {
         width: 55px;
@@ -258,7 +258,7 @@
         text-align: center;
         border-radius: 5px;
         margin-right: 20px;
-        background: var(--heading-color);
+        background: $heading-color;
       }
 
       h5 {
@@ -266,7 +266,7 @@
       }
 
       &:hover i {
-        background: var(--primary-color);
+        background: $primary-color;
       }
     }
   }

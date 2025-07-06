@@ -11,21 +11,35 @@
 /*==== 3. Estilos personalizados del sitio ====*/
 
 /* Utilidades base */
-@import 'base/variables';
-@import 'base/typography';
-@import 'base/mixins';
 @import 'base/reset';
+@import 'base/variables';
+@import 'base/default';
+@import 'base/common';
+@import 'base/mixins';
 
 /* Estructura general */
 @import 'layout/menu';
-@import 'layout/sections';       // Hero, About, Services, etc.
+@import 'layout/hero';
+@import 'layout/page-banner';
+@import 'layout/partner';
+@import 'layout/solutions';
+@import 'layout/about';
+@import 'layout/counter';
+@import 'layout/features';
+@import 'layout/services';
+@import 'layout/newsletter';
+@import 'layout/feedback';
+@import 'layout/project-area';
 @import 'layout/blog';
 @import 'layout/blog-details';
 @import 'layout/sidebar';
 @import 'layout/team';
 @import 'layout/pricing';
 @import 'layout/contact';
+@import 'layout/dashboard';
 @import 'layout/footer';
+@import 'animations/custom-animations';
+@import 'animations/dark';
 
 /* Estilos adaptativos */
 @import 'layout/responsive'; // responsive.scss

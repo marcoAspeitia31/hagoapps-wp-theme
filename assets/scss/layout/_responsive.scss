@@ -129,7 +129,7 @@
       padding: 2px 15px;
 
       &.active {
-        background: var(--light-color);
+        background: $light-color;
         border-color: transparent;
       }
     }

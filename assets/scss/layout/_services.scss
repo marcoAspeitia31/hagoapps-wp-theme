@@ -1,0 +1,164 @@
+/****************************************************** */
+/***************** 10. Service Section **************** */
+/****************************************************** */
+
+.services-tab {
+  .nav {
+    background: $light-color;
+
+    .nav-link {
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 0;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      color: $heading-color;
+      font-family: $heading-font;
+      border-top: 2px solid transparent;
+
+      &.active {
+        background: transparent;
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .tab-content {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.service-content {
+  max-width: 428px;
+
+  h3 {
+    font-size: 27px;
+    line-height: 1.45;
+    margin-bottom: 15px;
+  }
+}
+
+.services-image img {
+  width: 100%;
+}
+
+.dots-circle-half {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 20%;
+}
+
+/* Services Solutions */
+
+.solutions-tab-nav {
+  height: 100%;
+
+  .nav-item {
+    margin-bottom: 20px;
+  }
+
+  .nav-link {
+    display: flex;
+    height: 100%;
+    text-align: left;
+    padding: 25px 35px;
+    border-radius: 7px;
+    align-items: center;
+    border: 1px solid $border-color;
+
+    > i {
+      margin-right: 20px;
+      font-size: 60px;
+      flex: none;
+    }
+
+    h3 {
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:hover, &.active {
+      border-color: $primary-color;
+      color: $primary-color;
+      background: transparent;
+    }
+  }
+}
+
+/* Services Style Three */
+
+.service-item {
+  display: flex;
+  background: white;
+  position: relative;
+  border-radius: 7px;
+  margin-bottom: 30px;
+  padding: 50px 45px 25px;
+
+  &:after {
+    content: '';
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.25s;
+    border-radius: 7px;
+    position: absolute;
+    background: $primary-color;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    bottom: -5px;
+  }
+
+  > i {
+    font-size: 60px;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    color: $primary-color;
+  }
+
+  .content h3 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Service Details */
+
+.single-service-content {
+  .image img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p, h2 {
+    margin-bottom: 15px;
+  }
+}
+
+/* Service Style Two */
+
+.service-item-two {
+  margin-bottom: 50px;
+
+  > i {
+    font-size: 66px;
+    margin-bottom: 25px;
+    display: inline-block;
+    color: $primary-color;
+  }
+}

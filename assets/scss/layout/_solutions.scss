@@ -1,0 +1,146 @@
+/****************************************************** */
+/************** 06. Solutions Section  **************** */
+/****************************************************** */
+
+.solution-item {
+  transition: 0.5s;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: 1px solid $border-color;
+
+  &:hover {
+    border-color: white;
+    box-shadow: 10px 0 60px rgba(81, 56, 238, 0.1);
+  }
+}
+
+.solution-content {
+  padding: 35px 30px 10px;
+  border-bottom: 1px solid $border-color;
+
+  i {
+    z-index: 1;
+    font-size: 65px;
+    position: relative;
+    margin-bottom: 25px;
+    display: inline-block;
+    color: $primary-color;
+
+    &:after {
+      content: '';
+      height: 75px;
+      width: 75px;
+      top: -15px;
+      left: -25px;
+      z-index: -1;
+      position: absolute;
+      background: #f3f1fe;
+      border-radius: 50%;
+    }
+  }
+}
+
+.solutions-section .close-shape {
+  top: 0;
+  left: 75%;
+}
+
+/* Solution Two */
+
+.solution-item-two {
+  position: relative;
+  padding: 45px 0 30px 45px;
+
+  .number {
+    font-size: 200px;
+    font-weight: 600;
+    opacity: 0.03;
+    left: 0;
+    top: 0;
+    line-height: 1;
+    position: absolute;
+    color: $heading-color;
+    font-family: $heading-font;
+  }
+
+  > i {
+    height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: inline-block;
+    background: $primary-color;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  &.color-two > i {
+    background: $yellow-color;
+  }
+
+  &.color-three > i {
+    background: #ff6101;
+  }
+
+  &.color-four > i {
+    background: #f001ff;
+  }
+}
+
+/* Solutions Three */
+
+.solutions-section-three {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.solution-item-three {
+  padding: 0 50px;
+  margin-bottom: 50px;
+
+  > i {
+    height: 85px;
+    width: 85px;
+    z-index: 1;
+    font-size: 38px;
+    line-height: 85px;
+    background: white;
+    position: relative;
+    border-radius: 7px;
+    margin-bottom: 44px;
+    display: inline-block;
+    color: $primary-color;
+
+    &:after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      left: 10px;
+      top: 10px;
+      z-index: -1;
+      opacity: 0.15;
+      position: absolute;
+      border-radius: 7px;
+      border: 1px solid $border-color;
+    }
+  }
+
+  h3 {
+    font-size: 27px;
+    margin-bottom: 15px;
+  }
+
+  > a {
+    color: white;
+    text-decoration: underline;
+  }
+}

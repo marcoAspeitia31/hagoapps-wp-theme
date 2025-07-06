@@ -1,6 +1,6 @@
-/******************************************************
-******************** 14. Blog Area *******************
-******************************************************/
+/****************************************************** */
+/******************** 14. Blog Area ******************* */
+/****************************************************** */
 
 .blog-item {
   position: relative;
@@ -10,16 +10,11 @@
   .image img {
     width: 100%;
   }
-
-  .learn-more {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
 }
 
 .blog-content {
   padding: 40px 30px 10px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 
   h4 {
     margin-bottom: 12px;
@@ -36,7 +31,7 @@
   position: absolute;
   align-items: center;
   width: calc(100% - 60px);
-  box-shadow: 10px 0 60px rgba(81, 56, 238, 0.15);
+  box-shadow: 10px 0 60px rgb(81 56 238 / 15%);
 
   img {
     flex: none;
@@ -70,6 +65,11 @@
   }
 }
 
+.blog-item .learn-more {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 /* Blog Style Two */
 
 .blog-item-two {
@@ -86,18 +86,6 @@
 
     a:hover {
       text-decoration: underline;
-    }
-  }
-
-  &:hover {
-    color: white;
-
-    a {
-      color: white;
-    }
-
-    .blog-two-image {
-      opacity: 1;
     }
   }
 }
@@ -124,6 +112,18 @@
   }
 }
 
+.blog-item-two:hover {
+  .blog-two-image {
+    opacity: 1;
+  }
+
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
 /* Blog Standard */
 
 .blog-standard-item {
@@ -145,7 +145,7 @@
       margin-right: 25px;
       margin-bottom: 12px;
       padding-right: 25px;
-      border-right: 3px solid var(--border-color);
+      border-right: 3px solid $border-color;
     }
   }
 

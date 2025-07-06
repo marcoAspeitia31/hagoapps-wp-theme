@@ -33,16 +33,16 @@ blockquote {
     font-size: 30px;
     font-weight: 600;
     line-height: 1.33;
-    font-family: var(--heading-font);
+    font-family: $heading-font;
   }
 
   .name-designation {
-    font-family: var(--heading-font);
+    font-family: $heading-font;
 
     .name {
       font-size: 18px;
       font-weight: 600;
-      color: var(--primary-color);
+      color: $primary-color;
     }
 
     .designation {
@@ -65,8 +65,8 @@ blockquote {
   .tags b, .social b {
     font-size: 18px;
     margin: 10px 15px 10px 0;
-    color: var(--heading-color);
-    font-family: var(--heading-font);
+    color: $heading-color;
+    font-family: $heading-font;
   }
 
   .tags a {
@@ -75,14 +75,14 @@ blockquote {
     line-height: 1;
     border-radius: 5px;
     margin: 5px 10px 5px 0;
-    color: var(--heading-color);
-    font-family: var(--heading-font);
-    border: 1px solid var(--border-color);
+    color: $heading-color;
+    font-family: $heading-font;
+    border: 1px solid $border-color;
 
     &:hover {
       color: white;
-      border-color: var(--primary-color);
-      background: var(--primary-color);
+      border-color: $primary-color;
+      background: $primary-color;
     }
   }
 
@@ -136,7 +136,7 @@ blockquote {
     display: flex;
     font-weight: 600;
     align-items: center;
-    font-family: var(--heading-font);
+    font-family: $heading-font;
 
     i {
       margin: 5px 0 0 5px;

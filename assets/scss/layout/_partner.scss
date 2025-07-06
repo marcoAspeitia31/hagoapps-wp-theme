@@ -1,0 +1,44 @@
+/****************************************************** */
+/*************** 05. Partner Section  ***************** */
+/****************************************************** */
+
+.partner-item {
+  margin-bottom: 40px;
+  display: inline-block;
+  filter: grayscale(1) opacity(0.4);
+
+  &:hover {
+    filter: grayscale(0) opacity(1);
+  }
+}
+
+.hero-about-bg {
+  z-index: -1;
+  left: 0;
+  top: -555px;
+  width: 100%;
+  position: absolute;
+}
+
+.partner-dashboard {
+  margin-top: -400px;
+  position: relative;
+  z-index: 3;
+
+  img {
+    width: 100%;
+  }
+}
+
+.partner-two-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*Partner Three*/
+
+.partner-item-three {
+  display: inline-block;
+  margin-bottom: 50px;
+}

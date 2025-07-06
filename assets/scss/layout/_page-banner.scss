@@ -1,0 +1,67 @@
+
+/****************************************************** */
+/***************** 04. Page Banner  ******************* */
+/****************************************************** */
+
+.page-banner {
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  color: white;
+  font-size: 55px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 5px;
+  background: transparent;
+}
+
+.breadcrumb-item {
+  a {
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  &.active {
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+
+  + .breadcrumb-item::before {
+    content: "\f105";
+    margin: 0 10px;
+    color: white;
+    float: left;
+    font-weight: 600;
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+.page-banner {
+  .banner-circle {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    z-index: -1;
+    max-width: 22%;
+  }
+
+  .dots-shape-three {
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    z-index: -1;
+    max-width: 22%;
+  }
+}

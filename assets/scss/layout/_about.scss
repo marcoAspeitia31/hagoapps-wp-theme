@@ -1,0 +1,62 @@
+
+/****************************************************** */
+/****************** 07. About Section ***************** */
+/****************************************************** */
+
+.about-content-three .list-style-one {
+  flex-wrap: wrap;
+  display: flex;
+
+  li {
+    font-family: $heading-font;
+    color: $heading-color;
+    font-size: 22px;
+
+    &:first-child {
+      width: 55%;
+    }
+
+    &:before {
+      height: 30px;
+      width: 30px;
+      color: white;
+      margin-top: 2px;
+      line-height: 30px;
+      background: $primary-color;
+    }
+  }
+}
+
+/* browswr-support-content */
+
+.browswr-support-content .solution-item-two {
+  padding: 0;
+  margin-top: 25px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* About Page */
+
+.about-page-images {
+  display: flex;
+  align-items: center;
+
+  img {
+    &:first-child {
+      margin-right: 30px;
+      max-width: 60%;
+    }
+
+    &:last-child {
+      border-radius: 100px 100px 0 100px;
+      width: 33%;
+    }
+  }
+}
+
+.solutions-section-three .number {
+  left: -10px;
+}

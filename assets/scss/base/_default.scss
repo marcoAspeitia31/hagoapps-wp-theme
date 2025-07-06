@@ -1,0 +1,154 @@
+/****************************************************** */
+/******************** 01. Default CSS ***************** */
+/****************************************************** */
+
+.home-two {
+  --primary-color:#017EFF;
+
+  .sub-title {
+    background: #edf6ff;
+  }
+
+  .text-white .sub-title {
+    background: #2187fe;
+  }
+
+  .section-title h2 span {
+    background-image: url(../images/shapes/section-title-circle-yellow.png);
+  }
+}
+
+body {
+  color: $base-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+  font-family: $base-font;
+}
+
+a {
+  color: $base-color;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+
+  &:focus, &:visited {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: $heading-font;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: $heading-color;
+}
+
+.text-white {
+  h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, &.section-title h2 span {
+    color: #ffffff;
+  }
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+header:after, section:after, footer:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/*======= Input Styles =======*/
+
+input, textarea, select {
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+}
+
+textarea {
+  height: 170px;
+  display: inherit;
+  padding-top: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  &[type="button"]:focus, &[type="reset"]:focus, &[type="submit"]:focus {
+    outline: none;
+  }
+}
+
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder {
+  opacity: 1;
+}
+
+input {
+  &[type=search] {
+    &::-ms-clear, &::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+
+  &[type=checkbox], &[type=radio] {
+    height: auto;
+    width: auto;
+  }
+}

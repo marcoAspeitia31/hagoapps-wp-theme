@@ -1,72 +1,6 @@
-/******************************************************
-************ 20. Dashboard Screenshot Area ***********
-******************************************************/
-
-.dashboard-screenshot-item {
-  opacity: 0.25;
-  text-align: right;
-
-  &.slick-active {
-    border-radius: 0;
-    opacity: 1;
-    z-index: 4;
-
-    img {
-      transform: translate(0);
-      border-radius: 0;
-      width: 100%;
-    }
-
-    + .dashboard-screenshot-item {
-      text-align: left;
-
-      img {
-        transform: translate(calc(144px - 100%));
-      }
-    }
-  }
-
-  img {
-    transform: translate(calc(100% - 144px));
-    display: inline-block;
-    border-radius: 25px;
-    width: 80%;
-  }
-}
-
-.dashboard-screenshot-wrap {
-  .slick-track {
-    align-items: center;
-    display: flex;
-  }
-
-  .slick-arrow {
-    color: white;
-    border: none;
-    z-index: 1;
-    position: absolute;
-    top: calc(50% - 27px);
-    background: var(--heading-color);
-
-    &:hover,
-    &:focus {
-      background: var(--primary-color);
-    }
-  }
-
-  .dashboard-prev {
-    left: -27px;
-  }
-
-  .dashboard-next {
-    right: -27px;
-  }
-}
-
-
-/******************************************************
-******************* 21. Footer Area ******************
-******************************************************/
+/****************************************************** */
+/******************* 21. Footer Area ****************** */
+/****************************************************** */
 
 .footer-section {
   .newsletter-inner {
@@ -76,8 +10,8 @@
   }
 
   .newsletter-email button {
-    background: var(--yellow-color);
-    color: var(--heading-color);
+    background: $yellow-color;
+    color: $heading-color;
     font-weight: 700;
   }
 
@@ -90,7 +24,27 @@
   border-radius: 7px;
   padding: 45px 90px 25px;
   transform: translateY(-80px);
+}
 
+.call-to-action-btns .theme-btn {
+  &:not(:last-child) {
+    border: 2px solid white;
+    margin-right: 15px;
+  }
+
+  &.style-three {
+    background: transparent;
+    border-color: white;
+    color: white;
+
+    &:hover {
+      color: $primary-color;
+      background: white;
+    }
+  }
+}
+
+.call-to-action {
   .white-circle {
     left: 2%;
     bottom: 42%;
@@ -107,24 +61,6 @@
     z-index: -1;
     right: 28%;
     top: 0;
-  }
-}
-
-.call-to-action-btns .theme-btn {
-  &:not(:last-child) {
-    border: 2px solid white;
-    margin-right: 15px;
-  }
-
-  &.style-three {
-    background: transparent;
-    border-color: white;
-    color: white;
-
-    &:hover {
-      color: var(--primary-color);
-      background: white;
-    }
   }
 }
 
@@ -146,7 +82,7 @@
   p b {
     font-weight: 600;
     text-decoration: underline;
-    color: var(--primary-color);
+    color: $primary-color;
   }
 }
 
@@ -159,27 +95,21 @@
   border-top: 1px solid #dfdbfa;
 
   p a {
-    color: var(--primary-color);
+    color: $primary-color;
   }
 }
 
-/* Circles decorativos */
-
-.left-circles,
-.right-circles,
-.left-circles:after,
-.right-circles:after {
+.left-circles, .right-circles, .left-circles:after, .right-circles:after {
   height: 500px;
   width: 500px;
   z-index: -1;
   position: absolute;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid $border-color;
   animation: slideUpDown 4s infinite linear;
 }
 
-.left-circles:after,
-.right-circles:after {
+.left-circles:after, .right-circles:after {
   content: '';
   top: 50%;
   animation-delay: 2s;
@@ -203,23 +133,16 @@
 /* Footer Style Two */
 
 .footer-section.text-white {
-  p span,
-  .copyright-area p,
-  .list-style-two a,
-  .list-style-three li span {
+  p span, .copyright-area p, .list-style-two a, .list-style-three li span {
     opacity: 0.7;
   }
 
-  p b,
-  .list-style-two a,
-  .copyright-area p a,
-  .social-style-one a {
+  p b, .list-style-two a, .copyright-area p a, .social-style-one a {
     color: white;
   }
 
   .list-style-three li {
-    i,
-    a {
+    i, a {
       color: white;
     }
   }
@@ -232,7 +155,7 @@
     background: rgba(255, 255, 255, 0.1);
 
     &:hover {
-      background: var(--primary-color);
+      background: $primary-color;
     }
   }
 
@@ -274,14 +197,13 @@
 
 .inner-page {
   .footer-section .newsletter-email button {
-    background: var(--heading-color);
+    background: $heading-color;
     color: white;
   }
 
   .slider-arrow-btns button {
-    &:hover,
-    &:focus {
-      background: var(--primary-color);
+    &:hover, &:focus {
+      background: $primary-color;
     }
   }
 }
