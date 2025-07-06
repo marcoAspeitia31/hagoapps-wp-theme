@@ -1,0 +1,31 @@
+/******************************************************
+******************** MAIN SCSS FILE ******************
+******************************************************/
+
+/*==== 1. Fuentes externas (se siguen llamando en el HTML) ====*/
+/* Google Fonts y librerías externas como Font Awesome, Flaticon,
+   Bootstrap, Animate.css, etc., se siguen incluyendo vía <link> en el HTML */
+
+/*==== 2. Librerías de terceros (convertidas o separadas en vendors) ====*/
+
+/*==== 3. Estilos personalizados del sitio ====*/
+
+/* Utilidades base */
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/mixins';
+@import 'base/reset';
+
+/* Estructura general */
+@import 'layout/menu';
+@import 'layout/sections';       // Hero, About, Services, etc.
+@import 'layout/blog';
+@import 'layout/blog-details';
+@import 'layout/sidebar';
+@import 'layout/team';
+@import 'layout/pricing';
+@import 'layout/contact';
+@import 'layout/footer';
+
+/* Estilos adaptativos */
+@import 'layout/responsive'; // responsive.scss

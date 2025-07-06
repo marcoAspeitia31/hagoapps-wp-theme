@@ -1,0 +1,85 @@
+/******************************************************
+****************** 18. Team Members ******************
+******************************************************/
+
+.team-section .counter-inner-two {
+  transform: translateY(-155px);
+  margin-bottom: -155px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .image {
+    position: relative;
+    margin-bottom: 45px;
+
+    img {
+      border-radius: 0 150px 150px 150px;
+    }
+
+    a {
+      position: absolute;
+      height: 55px;
+      width: 55px;
+      bottom: 0;
+      left: 50%;
+      color: white;
+      line-height: 55px;
+      border-radius: 50%;
+      transform: translate(-50%, 44%);
+      background: var(--primary-color);
+    }
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+/* Team Profile Page */
+
+.team-profile-description {
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p,
+  h2,
+  h3 {
+    margin-bottom: 15px;
+  }
+}
+
+/* Skill Circle Progress */
+
+.progress-content {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.team-skill-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.progress-content h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+
+  span {
+    font-size: 18px;
+  }
+}

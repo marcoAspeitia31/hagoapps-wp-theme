@@ -1,0 +1,48 @@
+// ======================================================
+// 🔁 MIXINS GENERALES
+// Archivo base para utilidades reutilizables en SCSS
+// ======================================================
+
+/*📱 Media Queries con alias*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $breakpoint == sm {
+    @media (max-width: 767.98px) { @content; }
+  }
+  @else if $breakpoint == md {
+    @media (max-width: 991.98px) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: 1199.98px) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+/*🌫️ Sombra básica (parámetro opcional)*/
+@mixin box-shadow($shadow: 0 5px 25px rgba(0, 0, 0, 0.1)) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+/*🧭 Flexbox centrado horizontal y vertical*/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*⚡ Transición suave genérica*/
+@mixin transition($props: all, $time: 0.3s, $ease: ease-in-out) {
+  transition: $props $time $ease;
+}
+
+/*🧱 Mixin para aplicar un background cover centrado*/
+@mixin bg-cover($url) {
+  background: url($url) no-repeat center center;
+  background-size: cover;
+}

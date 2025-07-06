@@ -1,0 +1,31 @@
+:root {
+  scroll-behavior: auto;
+}
+
+// ======================================================
+// 🎨 VARIABLES GENERALES
+// Colores, fuentes, tamaños, breakpoints, etc.
+// ======================================================
+
+// 🎨 Paleta de colores
+$base-color:        #5b5675;
+$heading-color:     #141125;
+$primary-color:     #5138ee;
+$light-color:       #f8f7fc;
+$yellow-color:      #ffc800;
+$border-color:      #edebfd;
+
+// ✍️ Tipografías
+$base-font:         'Inter', sans-serif;
+$heading-font:      'Poppins', sans-serif;
+
+// 📱 Breakpoints (para usar con @media o mixins)
+$breakpoint-xs:     575.98px;
+$breakpoint-sm:     767.98px;
+$breakpoint-md:     991.98px;
+$breakpoint-lg:     1199.98px;
+$breakpoint-xl:     1200px;
+
+// 🧱 Otros (si los necesitas después)
+// $container-max-width: 1200px;
+// $gutter: 30px;

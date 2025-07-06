@@ -1,0 +1,111 @@
+/******************************************************
+***************** 17. Pricing Section ****************
+******************************************************/
+
+.pricing-item {
+  z-index: 1;
+  padding: 40px;
+  overflow: hidden;
+  background: white;
+  border-radius: 7px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+    position: absolute;
+    background: url(../images/shapes/pricing-bg.png) no-repeat top / cover;
+  }
+
+  .price-title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: 0.5s;
+  }
+
+  .price {
+    font-size: 35px;
+    display: block;
+    transition: 0.5s;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+
+    &:before {
+      content: '$';
+    }
+
+    &:after {
+      content: '/monthly';
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+
+  .theme-btn {
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    background: white;
+    color: var(--heading-color);
+    border: 1px solid var(--border-color);
+  }
+
+  .list-style-one li {
+    margin-top: 7px;
+    margin-bottom: 0;
+    font-weight: 500;
+    transition: 0.5s;
+
+    &:before {
+      height: 20px;
+      width: 20px;
+      color: white;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 20px;
+      background: #1b8bff;
+    }
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+
+    p, .price, .price-title, .list-style-one li {
+      color: white;
+    }
+  }
+}
+
+.pricing-section {
+  .section-alpha-text {
+    transform: translateY(-80px);
+    margin-bottom: 0;
+  }
+
+  .close-shape {
+    left: 80%;
+    top: 10%;
+  }
+
+  .text-white .sub-title {
+    background: #323a4d;
+  }
+
+  .left-circles,
+  .right-circles {
+    opacity: 0.1;
+  }
+}

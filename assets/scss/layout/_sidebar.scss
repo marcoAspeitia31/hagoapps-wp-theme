@@ -1,0 +1,273 @@
+/******************************************************
+***************** 16. Sidebar Widgets ****************
+******************************************************/
+
+.widget:not(:last-child) {
+  margin-bottom: 55px;
+}
+
+.service-widget:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.widget-title {
+  position: relative;
+  margin-bottom: 35px;
+  padding-bottom: 28px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 60px;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: var(--primary-color);
+  }
+}
+
+/* Search Widget */
+
+.search-widget {
+  .widget-title {
+    margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  form {
+    position: relative;
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 66px;
+      height: 100%;
+      line-height: 1;
+      font-size: 18px;
+      background: transparent;
+      color: var(--primary-color);
+    }
+
+    input {
+      padding: 34px 40px;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+}
+
+/* Category Widget */
+
+.category-widget li {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:before {
+    content: "\f105";
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Free";
+  }
+
+  a:not(:hover) {
+    color: var(--heading-color);
+  }
+
+  span {
+    margin-left: auto;
+  }
+}
+
+/* News Widget */
+
+.news-widget-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  img {
+    margin-right: 30px;
+  }
+
+  h5 {
+    font-weight: 700;
+    line-height: 1.66;
+    margin-bottom: 0;
+  }
+
+  .date i {
+    margin-right: 5px;
+  }
+}
+
+/* Tag Cloud Widget */
+
+.tag-clouds {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    line-height: 1;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 5px;
+    background: #edebfd;
+    margin: 0 10px 10px 0;
+    color: var(--heading-color);
+
+    &:hover {
+      color: white;
+      background: var(--primary-color);
+    }
+  }
+}
+
+/* Service List Widget */
+
+.service-list {
+  padding: 30px 35px;
+  border: 1px solid var(--border-color);
+
+  li {
+    a {
+      display: flex;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 11px 25px;
+      border-radius: 5px;
+      align-items: center;
+      color: var(--heading-color);
+      justify-content: space-between;
+      background: var(--light-color);
+      font-family: var(--heading-font);
+
+      &:hover {
+        color: white;
+        background: var(--primary-color);
+      }
+    }
+
+    &.active a {
+      color: white;
+      background: var(--primary-color);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/* Call To Action Widget */
+
+.call-action-widget {
+  z-index: 1;
+  overflow: hidden;
+  padding: 40px 45px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: var(--primary-color);
+  background-image: url(../images/widgets/call-to-action-bg.png);
+
+  h3 {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    display: inline-block;
+    font-family: var(--heading-color);
+  }
+
+  .number {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: var(--heading-font);
+  }
+
+  .theme-btn {
+    background: white;
+    padding: 6px 25px;
+    margin-bottom: 25px;
+    color: var(--heading-color);
+  }
+
+  .action-man {
+    margin: -80px -45px -40px auto;
+    position: relative;
+    display: block;
+    z-index: -1;
+  }
+
+  .dots-shape {
+    left: 75%;
+    top: 12%;
+  }
+
+  .circle-shape {
+    right: 80%;
+    bottom: 15%;
+  }
+}
+
+/* File Download Widget */
+
+.file-download {
+  padding: 30px 35px;
+  border: 1px solid var(--border-color);
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+      background: var(--light-color);
+
+      i {
+        width: 55px;
+        height: 55px;
+        color: white;
+        font-size: 22px;
+        transition: 0.5s;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 20px;
+        background: var(--heading-color);
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      &:hover i {
+        background: var(--primary-color);
+      }
+    }
+  }
+}

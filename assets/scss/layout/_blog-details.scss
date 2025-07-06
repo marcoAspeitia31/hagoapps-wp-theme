@@ -1,0 +1,165 @@
+/******************************************************
+****************** 15. Blog Details ******************
+******************************************************/
+
+.blog-details-content h3 {
+  font-size: 30px;
+}
+
+/* Blockquote destacado */
+blockquote {
+  z-index: 1;
+  max-width: 680px;
+  text-align: center;
+  position: relative;
+  margin: 30px auto 0;
+  padding: 50px 50px 30px;
+
+  &:before {
+    position: absolute;
+    content: "\f10e";
+    left: 50%;
+    top: 20px;
+    z-index: -1;
+    color: #ededed;
+    line-height: 1;
+    font-size: 110px;
+    font-weight: 600;
+    transform: translate(-50%);
+    font-family: "Font Awesome 5 Free";
+  }
+
+  p {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.33;
+    font-family: var(--heading-font);
+  }
+
+  .name-designation {
+    font-family: var(--heading-font);
+
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .designation {
+      font-size: 14px;
+      display: inline-block;
+    }
+  }
+}
+
+/* Tags y botones de compartir */
+
+.blog-footer {
+  .tags, .social {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  .tags b, .social b {
+    font-size: 18px;
+    margin: 10px 15px 10px 0;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+  }
+
+  .tags a {
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 5px;
+    margin: 5px 10px 5px 0;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    border: 1px solid var(--border-color);
+
+    &:hover {
+      color: white;
+      border-color: var(--primary-color);
+      background: var(--primary-color);
+    }
+  }
+
+  .social a:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+/* Comentarios */
+
+.comment-item {
+  display: flex;
+  margin-bottom: 44px;
+
+  &.child-comment {
+    margin-left: 80px;
+  }
+}
+
+.author-image {
+  flex: none;
+  max-width: 100px;
+  margin-right: 30px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.comment-details {
+  .name-date {
+    flex-wrap: wrap;
+    display: flex;
+
+    h4 {
+      margin-right: 15px;
+    }
+
+    .date {
+      font-weight: 500;
+    }
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  .reply {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    font-family: var(--heading-font);
+
+    i {
+      margin: 5px 0 0 5px;
+    }
+  }
+}
+
+/* Comentario del administrador */
+
+.admin-comment {
+  border-radius: 7px;
+
+  .comment-details h3 {
+    font-size: 24px;
+  }
+
+  .social a {
+    margin-right: 15px;
+    color: white;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
